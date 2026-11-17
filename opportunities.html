@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campuz Loop | Opportunities</title>
+  <meta name="description" content="Scholarships, internships, jobs, gigs and competitions for Victoria University students.">
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&amp;family=Sora:wght@700;800&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER: logo and menu (the same on every page) -->
+  <header>
+    <div class="container nav-bar">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="Campuz Loop logo" width="36" height="36">
+        <span class="logo-name">campuz<span>loop</span></span>
+      </a>
+
+      <!-- phone menu button: a hidden checkbox and its label -->
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="study-hub.html">Study Hub</a></li>
+          <li><a href="marketplace.html">Marketplace</a></li>
+          <li><a href="support.html">Support a Student</a></li>
+          <li><a href="opportunities.html" class="active">Opportunities</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE BANNER -->
+    <section class="banner">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Opportunities</p>
+        <h1>Opportunities you should not miss</h1>
+        <p>Scholarships, internships, jobs, gigs and competitions, updated every Friday.</p>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="section">
+      <div class="container">
+        <h2>Categories</h2>
+        <div class="grid-4">
+          <div class="card">
+            <h3>Scholarships</h3>
+            <p>Help with fees and study abroad.</p>
+          </div>
+          <div class="card">
+            <h3>Internships</h3>
+            <p>Work experience before you graduate.</p>
+          </div>
+          <div class="card">
+            <h3>Jobs and gigs</h3>
+            <p>Part-time work and weekend gigs.</p>
+          </div>
+          <div class="card">
+            <h3>Competitions</h3>
+            <p>Hackathons, business pitches and talent shows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPPORTUNITY BOARD -->
+    <section class="section light">
+      <div class="container">
+        <h2>Opportunity board</h2>
+        <div class="table-box">
+          <table>
+            <tr>
+              <th>Opportunity</th>
+              <th>Type</th>
+              <th>Who can apply</th>
+              <th>Deadline</th>
+              <th>Status</th>
+            </tr>
+            <tr>
+              <td>Graduate internship</td>
+              <td>Internship</td>
+              <td>Final-year students</td>
+              <td>30 Nov 2026</td>
+              <td>Open</td>
+            </tr>
+            <tr>
+              <td>Fees scholarship</td>
+              <td>Scholarship</td>
+              <td>All students</td>
+              <td>15 Dec 2026</td>
+              <td>Open</td>
+            </tr>
+            <tr>
+              <td>Weekend event ushers</td>
+              <td>Gig</td>
+              <td>Any student</td>
+              <td>21 Nov 2026</td>
+              <td>Open</td>
+            </tr>
+            <tr>
+              <td>Tech hackathon</td>
+              <td>Competition</td>
+              <td>IT students</td>
+              <td>5 Feb 2027</td>
+              <td>Opens soon</td>
+            </tr>
+          </table>
+        </div>
+        <p><em>Sample entries. Real opportunities are added every Friday.</em></p>
+      </div>
+    </section>
+
+    <!-- HOW TO APPLY -->
+    <section class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>How to apply</h2>
+          <ol>
+            <li>Read the requirements first.</li>
+            <li>Prepare a one-page CV.</li>
+            <li>Apply early, never on the last day.</li>
+            <li>Ask a friend or lecturer to check your application.</li>
+          </ol>
+        </div>
+        <img src="images/students-group.jpg" alt="Students working together" width="626" height="417">
+      </div>
+    </section>
+
+    <!-- SHARE AN OPPORTUNITY -->
+    <section class="section light">
+      <div class="container grid-2">
+        <div>
+          <h2>Share an opportunity</h2>
+          <p>Know a scholarship, job or competition? Send it and we will add it to the board.</p>
+        </div>
+        <form action="mailto:campuzloop@gmail.com" method="post" enctype="text/plain">
+          <label for="title">Opportunity</label>
+          <input type="text" id="title" name="title" required>
+
+          <label for="opp-type">Type</label>
+          <select id="opp-type" name="type">
+            <option>Scholarship</option>
+            <option>Internship</option>
+            <option>Job or gig</option>
+            <option>Competition</option>
+          </select>
+
+          <label for="opp-link">Link</label>
+          <input type="url" id="opp-link" name="link" placeholder="https://">
+
+          <label for="deadline">Deadline</label>
+          <input type="date" id="deadline" name="deadline">
+
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (the same on every page) -->
+  <footer>
+    <div class="container grid-3">
+      <div>
+        <h2>Campuz Loop</h2>
+        <p>Started by Victoria University students, for Victoria University students. Stay in the loop.</p>
+      </div>
+      <div>
+        <h2>Pages</h2>
+        <ul>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="study-hub.html">Study Hub</a></li>
+          <li><a href="marketplace.html">Marketplace</a></li>
+          <li><a href="support.html">Support a Student</a></li>
+          <li><a href="opportunities.html">Opportunities</a></li>
+          <li><a href="index.html#contact">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Follow and contact</h2>
+        <ul>
+          <li><a href="https://www.youtube.com/@campuzloop">YouTube</a></li>
+          <li><a href="https://www.tiktok.com/@campuzloop">TikTok</a></li>
+          <li><a href="https://www.instagram.com/campuzloop">Instagram</a></li>
+          <li><a href="mailto:campuzloop@gmail.com">campuzloop@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">
+      <p>&copy; 2026 Campuz Loop. Fonts: Google Fonts. Map: Google Maps. Logo, icons and posters: Campuz Loop team. Photos: [photo credits].</p>
+    </div>
+  </footer>
+
+</body>
+</html>

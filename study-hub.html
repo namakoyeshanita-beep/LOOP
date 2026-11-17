@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campuz Loop | Study Hub</title>
+  <meta name="description" content="Coursework and exam deadlines with phone reminders, module guides and past questions.">
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&amp;family=Sora:wght@700;800&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER: logo and menu (the same on every page) -->
+  <header>
+    <div class="container nav-bar">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="Campuz Loop logo" width="36" height="36">
+        <span class="logo-name">campuz<span>loop</span></span>
+      </a>
+
+      <!-- phone menu button: a hidden checkbox and its label -->
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="study-hub.html" class="active">Study Hub</a></li>
+          <li><a href="marketplace.html">Marketplace</a></li>
+          <li><a href="support.html">Support a Student</a></li>
+          <li><a href="opportunities.html">Opportunities</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE BANNER -->
+    <section class="banner">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Study Hub</p>
+        <h1>Never miss a deadline again</h1>
+        <p>Deadlines posted by class reps, reminders on your phone, and past questions from students who did the module before you.</p>
+      </div>
+    </section>
+
+    <!-- JUMP LINKS -->
+    <div class="container links section">
+      <a href="#deadlines">Deadlines</a>
+      <a href="#post">Post a deadline</a>
+      <a href="#modules">Module library</a>
+      <a href="#share">Share a paper</a>
+    </div>
+
+    <!-- DEADLINE BOARD -->
+    <section class="section light" id="deadlines">
+      <div class="container">
+        <h2>Deadline board</h2>
+        <p>Click <strong>Google</strong> or <strong>Phone</strong> to add a date to your calendar and get a reminder.</p>
+        <div class="table-box">
+          <table>
+            <tr>
+              <th>Module</th>
+              <th>What is due</th>
+              <th>Date</th>
+              <th>Posted by</th>
+              <th>Remind me</th>
+            </tr>
+            <tr>
+              <td>Web Design</td>
+              <td>Coursework: build and host a website</td>
+              <td>24 Nov 2026</td>
+              <td>Class rep</td>
+              <td><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Web%20Design%3A%20Coursework%3A%20build%20and%20host%20a%20website&amp;dates=20261124/20261125">Google</a> | <a href="calendar/web-design.ics">Phone</a></td>
+            </tr>
+            <tr>
+              <td>Database Systems</td>
+              <td>Test 1</td>
+              <td>2 Dec 2026</td>
+              <td>Class rep</td>
+              <td><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Database%20Systems%3A%20Test%201&amp;dates=20261202/20261203">Google</a> | <a href="calendar/database-test.ics">Phone</a></td>
+            </tr>
+            <tr>
+              <td>Business Communication</td>
+              <td>Individual essay</td>
+              <td>9 Dec 2026</td>
+              <td>Class rep</td>
+              <td><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Business%20Communication%3A%20Individual%20essay&amp;dates=20261209/20261210">Google</a> | <a href="calendar/business-essay.ics">Phone</a></td>
+            </tr>
+            <tr>
+              <td>All modules</td>
+              <td>End of trimester exams begin</td>
+              <td>14 Dec 2026</td>
+              <td>Class rep</td>
+              <td><a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=All%20modules%3A%20End%20of%20trimester%20exams%20begin&amp;dates=20261214/20261215">Google</a> | <a href="calendar/exams.ics">Phone</a></td>
+            </tr>
+          </table>
+        </div>
+        <p><em>Sample entries. Always confirm dates on V-Class.</em></p>
+      </div>
+    </section>
+
+    <!-- POST A DEADLINE -->
+    <section class="section" id="post">
+      <div class="container grid-2">
+        <div>
+          <span class="tag">For class reps</span>
+          <h2>Post a deadline</h2>
+          <p>Class reps can add coursework, test and exam dates. We check each one before it goes on the board.</p>
+        </div>
+        <form action="mailto:campuzloop@gmail.com" method="post" enctype="text/plain">
+          <label for="module">Module</label>
+          <input type="text" id="module" name="module" required>
+
+          <label for="type">Type</label>
+          <select id="type" name="type">
+            <option>Coursework</option>
+            <option>Test</option>
+            <option>Exam</option>
+          </select>
+
+          <label for="due">Due date</label>
+          <input type="date" id="due" name="due" required>
+
+          <label for="rep">Your name (class rep)</label>
+          <input type="text" id="rep" name="rep" required>
+
+          <button type="submit" class="btn">Post deadline</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- MODULE LIBRARY -->
+    <section class="section light" id="modules">
+      <div class="container">
+        <h2>Module library</h2>
+        <p>Written by students who already did the module. Click "Past questions" to open the list.</p>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Web Design</h3>
+            <p><strong>Coursework:</strong> Group project: plan a website, then build and host it.</p>
+            <p><strong>Exam:</strong> Theory and short HTML and CSS questions.</p>
+            <p><strong>Tip:</strong> Check your code with the W3C validator early.</p>
+            <details>
+              <summary>Past questions</summary>
+              <ol>
+              <li>Explain the difference between a class and an id in CSS.</li>
+              <li>Write the HTML for a table with a header row.</li>
+              <li>Name three ways of adding CSS to a web page.</li>
+              </ol>
+            </details>
+          </div>
+          <div class="card">
+            <h3>Computer Architecture</h3>
+            <p><strong>Coursework:</strong> Group presentation and a short report.</p>
+            <p><strong>Exam:</strong> Number systems, logic gates and the CPU.</p>
+            <p><strong>Tip:</strong> Practise binary conversions until they are quick.</p>
+            <details>
+              <summary>Past questions</summary>
+              <ol>
+              <li>Explain the fetch, decode, execute cycle.</li>
+              <li>Convert 156 to binary.</li>
+              <li>Compare RISC and CISC processors.</li>
+              </ol>
+            </details>
+          </div>
+          <div class="card">
+            <h3>Programming Fundamentals</h3>
+            <p><strong>Coursework:</strong> Group mini-system in Python with a viva.</p>
+            <p><strong>Exam:</strong> Python basics on paper.</p>
+            <p><strong>Tip:</strong> Be ready to explain every line of your code.</p>
+            <details>
+              <summary>Past questions</summary>
+              <ol>
+              <li>Write a program that turns a mark into a grade.</li>
+              <li>Explain the difference between a list and a tuple.</li>
+              <li>Use a loop to add the numbers 1 to 100.</li>
+              </ol>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHARE A PAPER -->
+    <section class="section" id="share">
+      <div class="container grid-2">
+        <div>
+          <h2>Share a paper</h2>
+          <p>Finished a module? Share the questions so the next class can prepare early.</p>
+          <h3>Study rules</h3>
+          <ul>
+            <li>Coursework questions only after the deadline has passed.</li>
+            <li>No answers to coursework that is still open.</li>
+            <li>Exam papers only with the university's permission.</li>
+          </ul>
+        </div>
+        <form action="mailto:campuzloop@gmail.com" method="post" enctype="text/plain">
+          <label for="paper-module">Module</label>
+          <input type="text" id="paper-module" name="module" required>
+
+          <label for="link">Link to the file</label>
+          <input type="url" id="link" name="link" placeholder="https://" required>
+
+          <label class="check"><input type="checkbox" name="rules" required> The deadline has passed and there are no answers.</label>
+          <button type="submit" class="btn">Share paper</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (the same on every page) -->
+  <footer>
+    <div class="container grid-3">
+      <div>
+        <h2>Campuz Loop</h2>
+        <p>Started by Victoria University students, for Victoria University students. Stay in the loop.</p>
+      </div>
+      <div>
+        <h2>Pages</h2>
+        <ul>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="study-hub.html">Study Hub</a></li>
+          <li><a href="marketplace.html">Marketplace</a></li>
+          <li><a href="support.html">Support a Student</a></li>
+          <li><a href="opportunities.html">Opportunities</a></li>
+          <li><a href="index.html#contact">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Follow and contact</h2>
+        <ul>
+          <li><a href="https://www.youtube.com/@campuzloop">YouTube</a></li>
+          <li><a href="https://www.tiktok.com/@campuzloop">TikTok</a></li>
+          <li><a href="https://www.instagram.com/campuzloop">Instagram</a></li>
+          <li><a href="mailto:campuzloop@gmail.com">campuzloop@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">
+      <p>&copy; 2026 Campuz Loop. Fonts: Google Fonts. Map: Google Maps. Logo, icons and posters: Campuz Loop team. Photos: [photo credits].</p>
+    </div>
+  </footer>
+
+</body>
+</html>

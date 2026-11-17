@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campuz Loop | Marketplace</title>
+  <meta name="description" content="Find students selling food, books, gadgets and services on campus, and chat with them on WhatsApp.">
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&amp;family=Sora:wght@700;800&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER: logo and menu (the same on every page) -->
+  <header>
+    <div class="container nav-bar">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="Campuz Loop logo" width="36" height="36">
+        <span class="logo-name">campuz<span>loop</span></span>
+      </a>
+
+      <!-- phone menu button: a hidden checkbox and its label -->
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="study-hub.html">Study Hub</a></li>
+          <li><a href="marketplace.html" class="active">Marketplace</a></li>
+          <li><a href="support.html">Support a Student</a></li>
+          <li><a href="opportunities.html">Opportunities</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE BANNER -->
+    <section class="banner">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Marketplace</p>
+        <h1>Find it on campus. Fast.</h1>
+        <p>Students selling food, books, gadgets and services, with where to find them and a WhatsApp button.</p>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section">
+      <div class="container">
+        <h2>How it works</h2>
+        <div class="grid-3">
+          <div class="card">
+            <p class="number">1</p>
+            <h3>Browse</h3>
+            <p>Look through the listings or pick a category.</p>
+          </div>
+          <div class="card">
+            <p class="number">2</p>
+            <h3>Chat on WhatsApp</h3>
+            <p>Click the green button. A message is ready to send.</p>
+          </div>
+          <div class="card">
+            <p class="number">3</p>
+            <h3>Meet the seller</h3>
+            <p>Find them at their spot, check the item, then pay.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTINGS -->
+    <section class="section light">
+      <div class="container">
+        <h2>Listings</h2>
+        <div class="links">
+          <a href="#food">Food</a>
+          <a href="#gadgets">Gadgets</a>
+          <a href="#books">Books</a>
+          <a href="#fashion">Fashion</a>
+          <a href="#services">Services</a>
+        </div>
+        <div class="grid-3">
+          <div class="card" id="food">
+            <img src="images/icon-food.svg" alt="" class="icon" width="56" height="56">
+            <span class="tag">Food</span>
+            <h3>Samosas, chapati and juice</h3>
+            <p class="price">UGX 500 - 2,000</p>
+            <p><strong>Where:</strong> Main block, ground floor<br><strong>When:</strong> Mon to Fri, 10am - 4pm<br><strong>Seller:</strong> Namakoye Shanita</p>
+            <a href="https://wa.me/256705617116?text=Hi%2C%20I%20saw%20your%20snacks%20on%20Campuz%20Loop." class="btn btn-green">Chat on WhatsApp</a>
+          </div>
+          <div class="card" id="gadgets">
+            <img src="images/icon-gadget.svg" alt="" class="icon" width="56" height="56">
+            <span class="tag">Gadgets</span>
+            <h3>Chargers and earphones</h3>
+            <p class="price">UGX 10,000 - 35,000</p>
+            <p><strong>Where:</strong> Library entrance<br><strong>When:</strong> Mon to Fri, 9am - 5pm<br><strong>Seller:</strong> Ngor Adup</p>
+            <a href="https://wa.me/256705617116?text=Hi%2C%20I%20saw%20your%20gadgets%20on%20Campuz%20Loop." class="btn btn-green">Chat on WhatsApp</a>
+          </div>
+          <div class="card" id="books">
+            <img src="images/icon-book.svg" alt="" class="icon" width="56" height="56">
+            <span class="tag">Books</span>
+            <h3>Second-hand textbooks</h3>
+            <p class="price">From UGX 15,000</p>
+            <p><strong>Where:</strong> Level 3 study area<br><strong>When:</strong> By appointment<br><strong>Seller:</strong> Nansikombi Lillian</p>
+            <a href="https://wa.me/256705617116?text=Hi%2C%20I%20saw%20your%20books%20on%20Campuz%20Loop." class="btn btn-green">Chat on WhatsApp</a>
+          </div>
+          <div class="card" id="fashion">
+            <img src="images/icon-fashion.svg" alt="" class="icon" width="56" height="56">
+            <span class="tag">Fashion</span>
+            <h3>T-shirts and tote bags</h3>
+            <p class="price">UGX 20,000</p>
+            <p><strong>Where:</strong> Student centre<br><strong>When:</strong> Tue and Thu, 12pm - 3pm<br><strong>Seller:</strong> Ampaire Isabella</p>
+            <a href="https://wa.me/256705617116?text=Hi%2C%20I%20saw%20your%20T-shirts%20on%20Campuz%20Loop." class="btn btn-green">Chat on WhatsApp</a>
+          </div>
+          <div class="card" id="services">
+            <img src="images/icon-print.svg" alt="" class="icon" width="56" height="56">
+            <span class="tag">Services</span>
+            <h3>Printing and typing</h3>
+            <p class="price">UGX 200 per page</p>
+            <p><strong>Where:</strong> Block B, room 4<br><strong>When:</strong> Mon to Sat, 8am - 6pm<br><strong>Seller:</strong> Ddumba Norbert</p>
+            <a href="https://wa.me/256705617116?text=Hi%2C%20I%20saw%20your%20printing%20on%20Campuz%20Loop." class="btn btn-green">Chat on WhatsApp</a>
+          </div>
+          <div class="card">
+            <img src="images/icon-beauty.svg" alt="" class="icon" width="56" height="56">
+            <span class="tag">Services</span>
+            <h3>Hair braiding</h3>
+            <p class="price">From UGX 30,000</p>
+            <p><strong>Where:</strong> Hostel, room 12<br><strong>When:</strong> Weekends<br><strong>Seller:</strong> Kafeero Mercy</p>
+            <a href="https://wa.me/256705617116?text=Hi%2C%20I%20saw%20your%20hair%20service%20on%20Campuz%20Loop." class="btn btn-green">Chat on WhatsApp</a>
+          </div>
+        </div>
+        <p><em>Sample listings. Real sellers will replace them.</em></p>
+      </div>
+    </section>
+
+    <!-- LOST AND FOUND -->
+    <section class="section" id="lost">
+      <div class="container grid-2">
+        <div>
+          <h2>Lost and found</h2>
+          <p>Found something on campus? Tell us and we will post it here so the owner can collect it.</p>
+          <a href="mailto:campuzloop@gmail.com" class="btn">Report an item</a>
+        </div>
+        <div class="table-box">
+          <table>
+            <tr>
+              <th>Item</th>
+              <th>Found at</th>
+              <th>Date</th>
+            </tr>
+            <tr>
+              <td>Student ID card</td>
+              <td>Library</td>
+              <td>12 Nov 2026</td>
+            </tr>
+            <tr>
+              <td>Black flash disk</td>
+              <td>Computer lab 1</td>
+              <td>13 Nov 2026</td>
+            </tr>
+            <tr>
+              <td>Blue water bottle</td>
+              <td>Main block</td>
+              <td>14 Nov 2026</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELL WITH US -->
+    <section class="section light">
+      <div class="container grid-2">
+        <div>
+          <h2>Sell on Campuz Loop</h2>
+          <p>Selling something on campus? List it for free.</p>
+          <h3>Buy and sell safely</h3>
+          <ul>
+            <li>Meet in busy places on campus.</li>
+            <li>Check the item before you pay.</li>
+            <li>Keep your mobile money message.</li>
+          </ul>
+        </div>
+        <form action="mailto:campuzloop@gmail.com" method="post" enctype="text/plain">
+          <label for="seller">Your name</label>
+          <input type="text" id="seller" name="seller" required>
+
+          <label for="whatsapp">WhatsApp number</label>
+          <input type="tel" id="whatsapp" name="whatsapp" placeholder="07XX XXX XXX" required>
+
+          <label for="item">What you sell</label>
+          <input type="text" id="item" name="item" required>
+
+          <label for="category">Category</label>
+          <select id="category" name="category">
+            <option>Food</option>
+            <option>Gadgets</option>
+            <option>Books</option>
+            <option>Fashion</option>
+            <option>Services</option>
+          </select>
+
+          <label for="where">Where to find you</label>
+          <input type="text" id="where" name="where" required>
+
+          <button type="submit" class="btn">Send my listing</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (the same on every page) -->
+  <footer>
+    <div class="container grid-3">
+      <div>
+        <h2>Campuz Loop</h2>
+        <p>Started by Victoria University students, for Victoria University students. Stay in the loop.</p>
+      </div>
+      <div>
+        <h2>Pages</h2>
+        <ul>
+          <li><a href="shows.html">Shows</a></li>
+          <li><a href="study-hub.html">Study Hub</a></li>
+          <li><a href="marketplace.html">Marketplace</a></li>
+          <li><a href="support.html">Support a Student</a></li>
+          <li><a href="opportunities.html">Opportunities</a></li>
+          <li><a href="index.html#contact">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Follow and contact</h2>
+        <ul>
+          <li><a href="https://www.youtube.com/@campuzloop">YouTube</a></li>
+          <li><a href="https://www.tiktok.com/@campuzloop">TikTok</a></li>
+          <li><a href="https://www.instagram.com/campuzloop">Instagram</a></li>
+          <li><a href="mailto:campuzloop@gmail.com">campuzloop@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">
+      <p>&copy; 2026 Campuz Loop. Fonts: Google Fonts. Map: Google Maps. Logo, icons and posters: Campuz Loop team. Photos: [photo credits].</p>
+    </div>
+  </footer>
+
+</body>
+</html>
